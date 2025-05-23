@@ -14,6 +14,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #container {
@@ -25,6 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
+    margin: 0 auto;
 }
 
 #main-content {
@@ -43,11 +48,13 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: #031A42;
     z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fadeOutUp 1s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
 
 #headerSection {
@@ -57,7 +64,22 @@ body {
     place-items: center;
 }
 
-img {
+/* #loadedImg {
+    animation: swipe-down 1000ms ease-in-out;
+} */
+
+/* @keyframes swipe-down {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100;
+    }
+} */
+
+.logoImg {
     width: 177px;
     height: 174px;
 }
