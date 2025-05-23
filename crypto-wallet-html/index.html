@@ -37,6 +37,19 @@
             <p><strong>Address:</strong> <span id="walletAddress"></span></p>
             <p><strong>Balance:</strong> <span id="walletBalance"></span></p>
          </div>
+
+         <div id="sendSection" class="mt-6 p-4 bg-gray-800 rounded hidden">
+            <h2 class="text-xl font-semibold mb-4">Send Funds</h2>
+
+            <label class="block mb-2 text-sm">Recipient Address:</label>
+            <input type="text" id="recipientInput" class="w-full p-2 bg-gray-700 text-white rounded mb-4" placeholder="0x....">
+
+            <label class="block mb-2 text-sm">Amount (ETH) :</label>
+            <input type="number" id="amountInput" class="w-full p-2 bg-gray-700 text-white">
+
+         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
