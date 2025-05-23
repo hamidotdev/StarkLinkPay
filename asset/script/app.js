@@ -1,6 +1,8 @@
 window.addEventListener('load', () =>{
+    const loaderContainer = document.getElementById('loader')
+    const mainContainer = document.getElementById('main-content')
     setTimeout(() => {
-        document.getElementById('loader').style.display = "none";
-        document.getElementById('main-content').style.display = 'flex'
-    }, 700)
+        loaderContainer.style.display = "none";
+        mainContainer.style.display = 'flex'
+    }, 2500)
 })
