@@ -9,6 +9,34 @@
 </head>
 <body class="bg-[#0b1e39] test-white min-h-screen p-4">
     
-    <div class="max-w-md mx-auto space-y-6"></div>
+    <div class="max-w-md mx-auto space-y-6">
+        <h1 class="text-2xl font-bold text-center mb-4">Create Wallet</h1>
+
+        <!-- Wallet Creation -->
+        <button id="createWalletBtn" class="w-full bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded">
+            Generate Wallet
+        </button>
+
+        <!-- Mnemonic Display -->
+        <div id="mnemonicDisplay" class="mt-4 p-4 bg-gray-800 rounded hidden">
+            <p class="text-sm text-gray-300 mb-2">Your 12-word Phrase</p>
+            <p id="mnemonic" class="text-green-400 break-words"></p>
+        </div>
+
+        <!-- Import Wallet -->
+        <div class="mt-6">
+            <h2 class="text-xl font-semibold mb-2">Import Wallet</h2>
+            <textarea name="" id="mnemonicInput" rows="3" placeholder="Enter 12-word phrase" class="w-full p-2 bg-gray-700 text-white rounded mb-2"></textarea>
+            <button id="importWalletBtn" class="w-full bg-blue-600 hover:bg-blue-700 py-2 rounded">
+                Import Wallet
+            </button>
+        </div>
+
+        <!-- Balance Display -->
+         <div id="walletInfo" class="mt-6 p-4 bg-gray-800 rounded hidden">
+            <p><strong>Address:</strong> <span id="walletAddress"></span></p>
+            <p><strong>Balance:</strong> <span id="walletBalance"></span></p>
+         </div>
+    </div>
 </body>
 </html>
